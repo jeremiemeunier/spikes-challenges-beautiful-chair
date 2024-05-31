@@ -10,8 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.40.0",
+    "@tanstack/react-query-devtools": "^5.40.0",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.2.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1",
+    "sass": "^1.77.4",
+    "scss": "^0.2.4",
+    "simplebar-react": "^3.2.5",
+    "swiper": "^11.1.4",
+    "teaui-components": "^0.3.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
