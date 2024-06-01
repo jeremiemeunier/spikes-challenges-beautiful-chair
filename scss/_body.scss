@@ -7,6 +7,27 @@
     }
   }
 
+  .previous {
+    display: grid;
+    grid-template-columns: 40px;
+    align-items: center;
+    justify-items: center;
+
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    font-size: 24px;
+    text-decoration: none;
+
+    &:hover {
+      border-color: rgba($color: #17183B, $alpha: .2);
+      color: #3AA39F;
+    }
+  }
+
   .page {
     width: 90vw;
     max-width: 440px;
