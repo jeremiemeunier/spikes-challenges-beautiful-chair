@@ -1,0 +1,13 @@
+@use "../slideshow";
+@use "../header";
+@use "../body";
+
+@mixin worker($theme) {
+  // use
+  @include body.body($theme);
+  @include slideshow.slideshow($theme);
+
+  @include header.header($theme);
+  @include header.nav($theme);
+  @include header.appname($theme);
+}
