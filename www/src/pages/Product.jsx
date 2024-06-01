@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
 import SlideShow from "../components/Slideshow";
+import Colors from "../components/Colors";
+import CartForm from "../components/CartForm";
 
 const Product = () => {
   return (
     <div className="product-view">
       <div className="product-infos">
-        <Link to={"/shop/chair"}>
+        <Link className="previous" to={"/shop/chair"}>
           <i className="icon teaui-icon-arrow-left"></i>
         </Link>
         <p className="ariane">
@@ -27,8 +29,15 @@ const Product = () => {
         </p>
 
         <div className="shop">
-          <div className="colors"></div>
-          <div className="cart"></div>
+          <Colors
+            colors={[
+              { label: "Light gray", value: "light-gray" },
+              { label: "Blue gray", value: "blue-gray" },
+              { label: "Dark gray", value: "dark-gray" },
+              { label: "Pink", value: "pink" },
+            ]}
+          />
+          <CartForm />
           <p>Free 3-5 day shipping • Tool-free assembly • 30-day trial</p>
         </div>
       </div>
