@@ -6,6 +6,10 @@
     row-gap: 24px;
     justify-content: center;
 
+    max-height: calc(100vh - 80px);
+    box-sizing: border-box;
+    padding: 40px;
+
     // nav
     .slideshow-progress {
       display: grid;
@@ -42,7 +46,12 @@
     .slideshow-view {
       display: grid;
       justify-content: center;
+      justify-items: center;
       align-content: center;
+      align-items: center;
+
+      height: 100%;
+      overflow: hidden;
 
       img {
         max-width: 90%;
@@ -55,6 +64,7 @@
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: min-content;
+      justify-content: center;
       column-gap: 12px;
 
       .slideshow-nav-item {
