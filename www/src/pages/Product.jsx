@@ -32,50 +32,43 @@ const Product = () => {
           <p>Free 3-5 day shipping • Tool-free assembly • 30-day trial</p>
         </div>
       </div>
-      <div>
-        <SlideShow
-          data={[
-            {
-              media: {
-                thumbnail: "img/Rectangle_2.png",
-                original: "img/Rectangle_2.png",
-              },
+
+      <SlideShow
+        data={[
+          {
+            media: {
+              thumbnail: "/img/Rectangle_2.png",
+              original: "/img/Rectangle_2.png",
             },
-            {
-              media: {
-                thumbnail: "img/Rectangle_3.png",
-                original: "img/Rectangle_3.png",
-              },
+          },
+          {
+            media: {
+              thumbnail: "/img/Rectangle_4.png",
+              original: "/img/Rectangle_4.png",
             },
-            {
-              media: {
-                thumbnail: "img/Rectangle_4.png",
-                original: "img/Rectangle_4.png",
-              },
+          },
+          {
+            media: {
+              thumbnail: "/img/Rectangle_5.png",
+              original: "/img/Rectangle_5.png",
             },
-            {
-              media: {
-                thumbnail: "img/Rectangle_5.png",
-                original: "img/Rectangle_5.png",
-              },
+          },
+          {
+            media: {
+              thumbnail: "/img/Rectangle_6.png",
+              original: "/img/Rectangle_6.png",
             },
-            {
-              media: {
-                thumbnail: "img/Rectangle_6.png",
-                original: "img/Rectangle_6.png",
-              },
+          },
+          {
+            media: {
+              thumbnail:
+                "/img/langfjaell-office-chair-with-armrests-gunnared-beige-black__0461403_PE607530_S5 1.png",
+              original:
+                "/img/langfjaell-office-chair-with-armrests-gunnared-beige-black__0461403_PE607530_S5 1.png",
             },
-            {
-              media: {
-                thumbnail:
-                  "img/langfjaell-office-chair-with-armrests-gunnared-beige-black__0461403_PE607530_S5 1.png",
-                original:
-                  "img/langfjaell-office-chair-with-armrests-gunnared-beige-black__0461403_PE607530_S5 1.png",
-              },
-            },
-          ]}
-        />
-      </div>
+          },
+        ]}
+      />
     </div>
   );
 };
