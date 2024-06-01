@@ -1,8 +1,16 @@
 @mixin body($theme) {
 
   body {
-    color: #17183B;
-    font-family: "Outfit";
+    * {
+      color: #17183B;
+      font-family: "Poppins";
+    }
+  }
+
+  .page {
+    width: 90vw;
+    max-width: 440px;
+    margin: auto;
   }
 
   .product-view {
@@ -20,7 +28,7 @@
 
       h1 {
         font-size: 44px;
-        font-weight: 900;
+        font-weight: 600;
       }
 
       .ariane {
@@ -44,6 +52,89 @@
         .price {
           font-size: 24px;
           font-weight: 600;
+        }
+      }
+
+      .description {
+        line-height: 150%;
+      }
+    }
+
+    .shop {
+      display: grid;
+      row-gap: 32px;
+
+      .colors {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        align-items: center;
+        column-gap: 8px;
+
+        height: 40px;
+
+        p {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: .8em;
+        }
+
+        .choices {
+          display: grid;
+          grid-template-columns: 28px;
+          grid-auto-flow: column;
+          grid-auto-columns: 28px;
+          column-gap: 4px;
+        }
+
+
+        input[type="radio"] {
+          display: none;
+
+          &:checked {
+            +label {
+              background-color: rgba($color: #17183B, $alpha: .1);
+            }
+          }
+
+          +label:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            content: '';
+            transform: translateY(-50%) translateX(-50%);
+          }
+        }
+
+        label {
+          position: relative;
+
+          min-width: 28px;
+          min-height: 28px;
+          border-radius: 50%;
+
+          cursor: pointer;
+
+          &.light-gray:before {
+            background-color: #C1BDB3;
+          }
+
+          &.blue-gray:before {
+            background-color: #58737D;
+          }
+
+          &.dark-gray:before {
+            background-color: #545454;
+          }
+
+          &.pink:before {
+            background-color: #CBA5A5;
+          }
         }
       }
     }

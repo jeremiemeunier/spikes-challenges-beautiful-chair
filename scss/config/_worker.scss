@@ -1,6 +1,7 @@
 @use "../slideshow";
 @use "../header";
 @use "../body";
+@use "../shop";
 
 @mixin worker($theme) {
   // use
@@ -10,4 +11,6 @@
   @include header.header($theme);
   @include header.nav($theme);
   @include header.appname($theme);
+
+  @include shop.quantity($theme);
 }

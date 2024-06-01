@@ -1,0 +1,53 @@
+@mixin quantity($theme) {
+
+  .shop-add-cart {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 24px;
+
+    .cart-add-action {
+      border: none;
+      background-color: #3AA39F;
+      border-radius: 4px;
+      padding: 0 40px;
+      height: 52px;
+
+      color: #FFFFFF;
+      white-space: nowrap;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .shop-quantity {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+
+    border: 1px solid #A2A3B1;
+    border-radius: 4px;
+    overflow: hidden;
+
+    button {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+
+      background: none;
+      border: none;
+
+      font-size: 24px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($color: #17183B, $alpha: .1);
+      }
+    }
+
+    p {
+      align-self: center;
+
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}
