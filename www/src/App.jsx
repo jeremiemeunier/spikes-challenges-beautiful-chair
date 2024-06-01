@@ -6,7 +6,6 @@ import ScrollProvider from "./context/ContextScroll";
 
 // components
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 // pages
 import Error404 from "./pages/error/Error404";
@@ -21,7 +20,6 @@ const App = () => {
           <Route path="/" element={<Product />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-        <Footer />
       </Router>
     </ScrollProvider>
   );
