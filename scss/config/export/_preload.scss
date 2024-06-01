@@ -1,0 +1,15 @@
+// Import all themes
+@import '../themes';
+
+// Import css worker
+@import '../worker';
+
+// Import reset all base css
+@import '../reset';
+
+// Import base external import
+@import '../import';
+
+
+// Include worker and theme
+@include worker($theme__spikes_beautiful_chair);

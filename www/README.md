@@ -1,4 +1,6 @@
-# React + Vite
+# Challenge Spikes — Une belle chaise
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be1a5ee3-f54d-4d27-bb42-dd89c2f3f699/deploy-status)](https://app.netlify.com/sites/spikes-challenges-beautiful-chair/deploys)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

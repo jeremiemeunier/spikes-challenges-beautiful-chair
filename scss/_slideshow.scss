@@ -1,0 +1,91 @@
+@mixin slideshow($theme) {
+
+  .slideshow {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    row-gap: 24px;
+    justify-content: center;
+
+    max-height: calc(100vh - 80px);
+    box-sizing: border-box;
+    padding: 40px;
+
+    // nav
+    .slideshow-progress {
+      display: grid;
+      row-gap: 8px;
+      justify-content: end;
+
+      p {
+        font-size: 24px;
+        text-align: center;
+        color: #A2A3B1;
+
+        strong {
+          font-size: 32px;
+          color: #17183B;
+        }
+      }
+
+      .slideshow-arrow {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 40px;
+
+        button {
+          border: none;
+          background: none;
+
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    // view
+    .slideshow-view {
+      display: grid;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      align-items: center;
+
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+
+    // navigation
+    .slideshow-nav {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: min-content;
+      justify-content: center;
+      column-gap: 12px;
+
+      .slideshow-nav-item {
+        height: 104px;
+        aspect-ratio: 1/1;
+        border-radius: 5px;
+        border: 2px solid #D1D1D8;
+        overflow: hidden;
+        padding: 8px;
+        box-sizing: border-box;
+
+        &.active {
+          border-color: #3AA39F;
+        }
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
